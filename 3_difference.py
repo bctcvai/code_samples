@@ -1,6 +1,6 @@
 def calculate_statistics_v1(species_sightings):
     """
-    Calculate mean and median counts in a less efficient way.
+    Calculate mean and median counts
     """
     # Calculate mean (less efficient way)
     total_count = sum(species_sightings["Sightings"])
