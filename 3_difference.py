@@ -2,12 +2,12 @@ def calculate_statistics_v1(species_sightings):
     """
     Calculate mean and median counts
     """
-    # Calculate mean (less efficient way)
+    # Calculate mean
     total_count = sum(species_sightings["Sightings"])
     num_species = len(species_sightings)
     mean_count_poor = total_count / num_species
 
-    # Calculate median (less efficient way)
+    # Calculate median 
     sorted_counts = sorted(species_sightings["Sightings"])
     if num_species % 2 == 0:
         median_count_poor = (
