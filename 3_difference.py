@@ -22,7 +22,7 @@ def calculate_statistics_v1(species_sightings):
 import pandas as pd
 
 
-def calculate_statistics(species_sightings):
+def calculate_statistics_v2(species_sightings):
     """
     Calculate basic statistics on species counts.
     """
