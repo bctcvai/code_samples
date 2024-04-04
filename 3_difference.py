@@ -5,18 +5,18 @@ def calculate_statistics_v1(species_sightings):
     # Calculate mean
     total_count = sum(species_sightings["Sightings"])
     num_species = len(species_sightings)
-    mean_count_poor = total_count / num_species
+    mean_count = total_count / num_species
 
     # Calculate median 
     sorted_counts = sorted(species_sightings["Sightings"])
     if num_species % 2 == 0:
-        median_count_poor = (
+        median_count = (
             sorted_counts[num_species // 2 - 1] + sorted_counts[num_species // 2]
         ) / 2
     else:
-        median_count_poor = sorted_counts[num_species // 2]
+        median_count = sorted_counts[num_species // 2]
 
-    return mean_count_poor, median_count_poor
+    return mean_count, median_count
 
 
 import pandas as pd
